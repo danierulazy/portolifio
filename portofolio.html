@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Ahmad Danil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo" id="secretLogo">
+    <img src="motion1.gif" alt="Logo">
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="portofolio.html">Portfolio</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-title">
+  <h1>My Portfolio</h1>
+  <p>Selected works • visual storytelling</p>
+</section>
+
+<!-- FILTER -->
+<section class="portfolio-filter">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="design">Design</button>
+  <button class="filter-btn" data-filter="photo">Photography</button>
+  <button class="filter-btn" data-filter="video">Video</button>
+  <button class="filter-btn" data-filter="motion">Motion</button>
+</section>
+
+<!-- GRID -->
+<!-- GRID -->
+<section class="portfolio-grid">
+
+  <div class="portfolio-item design"
+       style="background-image:url('poster1.jpg')">
+    <div class="overlay">
+      <h3>GFX Design</h3>
+      <p>Anime GFX Design</p>
+    </div>
+  </div>
+
+  <div class="portfolio-item photo"
+       style="background-image:url('photo1.jpg')">
+    <div class="overlay">
+      <h3>Photography</h3>
+      <p>Composition & Lighting</p>
+    </div>
+  </div>
+
+  <div class="portfolio-item video"
+       style="background-image:url('video-thumb1.jpg')"
+       onclick="window.open('https://youtu.be/d2ym3MhWYus?si=jjY5nO4dx4XKmR8q','_blank')">
+    <div class="overlay">
+      <h3>Video Editing</h3>
+      <p>School Project Editing</p>
+    </div>
+  </div>
+
+  <div class="portfolio-item motion"
+       style="background-image:url('motion2.gif')">
+    <div class="overlay">
+      <h3>Motion Graphic</h3>
+      <p>Animated Visual</p>
+    </div>
+  </div>
+
+  <div class="portfolio-item video"
+       style="background-image:url('video-thumb2.jpg')"
+       onclick="window.open('https://youtu.be/kfKSKs3OUXU?si=5tukx0JNT2Txt4ai','_blank')">
+    <div class="overlay">
+      <h3>YouTube Video</h3>
+      <p>Meme Gaming YouTube Video</p>
+    </div>
+  </div>
+
+</section>
+
+<div id="achievement">
+  🏆 Achievement Unlocked:
+  Portfolio Explorer
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

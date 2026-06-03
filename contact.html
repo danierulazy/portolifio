@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Ahmad Danil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo" id="secretLogo">
+    <img src="motion1.gif" alt="Logo">
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portofolio.html">Portfolio</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE TITLE -->
+<section class="page-title">
+  <h1>Contact Me</h1>
+  <p>Let’s work together</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-wrap">
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info">
+
+    <div class="contact-card">
+      <h3>Email</h3>
+      <p>danierulazy@gmail.com</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Instagram</h3>
+      <p>@danil02bbby_</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>WhatsApp</h3>
+      <p>08*********08</p>
+    </div>
+
+  </div>
+
+  <!-- CONTACT FORM (GMAIL) -->
+  <form class="contact-form"
+        action="mailto:danierulazy@gmail.com"
+        method="POST"
+        enctype="text/plain">
+
+    <h3>Send Message</h3>
+
+    <input type="text"
+           name="Name"
+           placeholder="Your Name"
+           required>
+
+    <input type="email"
+           name="Email"
+           placeholder="Your Email"
+           required>
+
+    <textarea name="Message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <button type="button" onclick="sendGmail()">Send via Gmail</button>
+
+    <p class="form-note">
+      *Message will be sent using Gmail
+    </p>
+
+  </form>
+
+</section>
+
+<script>
+function sendGmail() {
+  const name = document.querySelector('input[name="Name"]').value;
+  const email = document.querySelector('input[name="Email"]').value;
+  const message = document.querySelector('textarea[name="Message"]').value;
+
+  const gmailURL =
+    `https://mail.google.com/mail/?view=cm&fs=1` +
+    `&to=danierulazy@gmail.com` +
+    `&su=Message from ${encodeURIComponent(name)}` +
+    `&body=Email: ${encodeURIComponent(email)}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+
+  window.open(gmailURL, '_blank');
+}
+</script>
+
+<div id="achievement">
+  🏆 Achievement Unlocked:
+  Contact Explorer
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

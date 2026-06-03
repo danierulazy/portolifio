@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music | Ahmad Danil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo" id="secretLogo">
+    <img src="motion1.gif">
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portofolio.html">Portfolio</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a class="active" href="music.html">Music</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-title">
+  <h1>Music Space</h1>
+  <p>Favorite songs • playlist • mood</p>
+</section>
+
+<section class="favorite-section">
+
+  <h2>My Favorite Song</h2>
+
+<section class="music-grid">
+
+  <div class="music-card"
+       onclick="playMusic('song1.mp3', this)">
+
+    <img src="cover1.png">
+
+    <div class="music-overlay">
+      <h3>Letdown</h3>
+      <p>Radiohead</p>
+    </div>
+
+  </div>
+
+  <div class="music-card"
+       onclick="playMusic('song2.mp3', this)">
+
+    <img src="cover2.png">
+
+    <div class="music-overlay">
+      <h3>Impostor Syndrome</h3>
+      <p>Sidney Gish</p>
+    </div>
+
+  </div>
+
+</section>
+
+<audio id="audioPlayer"></audio>
+
+<section class="spotify-section">
+
+  <h2>My Playlist</h2>
+
+  <iframe
+    data-testid="embed-iframe"
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/1V4jELbGyrXCFncR5xhvay?utm_source=generator&theme=0"
+    width="100%"
+    height="352"
+    frameborder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+
+</section>
+
+<div id="secret-player">
+
+  <button id="close-player">
+    ✕
+  </button>
+
+ <video
+  id="rick-video"
+  width="320"
+  controls
+  preload="none">
+
+   <source
+     src="rickroll.mp4"
+     type="video/mp4">
+
+  </video>
+
+</div>
+
+<div id="achievement">
+  🏆 Achievement Unlocked:
+  Music Explorer
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
